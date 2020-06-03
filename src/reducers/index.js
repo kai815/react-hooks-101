@@ -45,4 +45,4 @@ const events = (state = [], action) => {
   }
 }
 
-export defaul events
+export default events
