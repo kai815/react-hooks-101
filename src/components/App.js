@@ -1,5 +1,5 @@
 import React from 'react'
-//最小限のimport
+//最小限のbootstrapをimport
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
