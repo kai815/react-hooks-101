@@ -2,15 +2,16 @@ import React, { useReducer, useState } from 'react'
 //最小限のbootstrapをimport
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import Event from './Event'
 import reducer from '../reducers'
 
 const App = () => {
-  const [state, dispath] = useReducer(reducer, [])
+  const [state, dispatch] = useReducer(reducer, [])
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const addEvent = e => {
     e.preventDefault()
-    dispath({
+    dispatch({
       type: 'CREATE_EVENT',
       title,
       body
@@ -43,7 +44,11 @@ const App = () => {
             <th>ボディー</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          { state.map((event,index) => (
+            <Event key={index} event={event} dispatch={dispatch}/>
+          ))}
+        </tbody>
       </table>
     </div>
   )
