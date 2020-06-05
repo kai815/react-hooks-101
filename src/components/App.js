@@ -8,8 +8,6 @@ import AppContext from '../contexts/AppContext'
 
 import reducer from '../reducers'
 
-console.log(AppContext)
-
 const App = () => {
   const [state, dispatch] = useReducer(reducer, [])
 

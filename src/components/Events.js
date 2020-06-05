@@ -1,4 +1,4 @@
-import React, { userContext, useContext } from 'react'
+import React, { useContext } from 'react'
 
 import Event from './Event'
 
