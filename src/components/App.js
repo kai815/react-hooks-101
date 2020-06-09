@@ -7,10 +7,8 @@ import Events from './Events'
 import AppContext from '../contexts/AppContext'
 
 import reducer from '../reducers'
-// import { timeCurrentIso8601 }from '../utils'
 
 const App = () => {
-  // console.log(timeCurrentIso8601())
   const initialState = {
     events:[],
     operationLogs:[]
