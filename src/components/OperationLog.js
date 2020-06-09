@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const OperationLog = ({ operationLog }) => {
   return (
     <tr>
